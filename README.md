@@ -32,7 +32,7 @@ To run the project locally, follow these steps:
 2. Navigate to the backend directory and run the API:
 
    ```bash
-   cd employee-management/backend
+   cd employee-management/api
    dotnet run
    ```
 
