@@ -1,0 +1,70 @@
+.employee {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+  
+  /* Delete button styling */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Delete button hover effect */
+.delete-button:hover {
+    background-color: #c82333;
+  }
+
+.employee-card {
+    background-color: #E0F7FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.employee-card h2 {
+    margin-top: 0;
+}
+
+.employee-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.employee-card p strong {
+    color: #333;
+}
+
+.employee-card p span {
+    color: #555;
+}
