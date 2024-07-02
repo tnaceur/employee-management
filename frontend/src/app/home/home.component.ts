@@ -10,6 +10,7 @@ import { EmployeeApiService } from '../employee-api.service';
   standalone: true,
   imports: [EmployeesListComponent, CommonModule],
   template: `
+    <h1>Employees</h1>
     <section class="result">
         <app-employees-list
           *ngFor="let employee of employeesList"
