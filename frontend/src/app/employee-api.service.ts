@@ -35,8 +35,8 @@ export class EmployeeApiService {
         salary: Number(salary),
       })
       .subscribe(
-        (response) => console.log('Employee added successfully', response),
-        (error) => console.error('Error adding employee:', error)
+        (response) => alert('Employee added successfully'),
+        (error) => alert('Error adding employee')
       );
   }
   editEmployee(
@@ -57,15 +57,15 @@ export class EmployeeApiService {
         position: position,
       })
       .subscribe(
-        (response) => console.log('Employee edited successfully', response),
-        (error) => console.error('Error editing employee:', error)
+        (response) => alert('Employee edited successfully'),
+        (error) => alert('Error editing employee')
       );
   }
   deleteEmployee(id: number) {
     this.httpClient.delete(apiEndpoint + "/" + id)
     .subscribe(
-      (response) => console.log('Employee deleted successfully', response),
-      (error) => console.error('Error deleting employee:', error)
+      (response) => alert('Employee deleted successfully'),
+      (error) => alert('Error deleting employee')
     );
   }
 }
