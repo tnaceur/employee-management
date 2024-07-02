@@ -22,10 +22,12 @@ public class EmployeeService
             .AsNoTracking()
             .SingleOrDefault(p => p.Id == id);
     }
-    public void Add(Employee newEmployee)
+    public bool Add(Employee newEmployee)
     {
+        if (newEmployee.Email != String.Empty && _context.Employees.Any(e => e.Email == newEmployee.Email)) return false;
         _context.Employees.Add(newEmployee);
         _context.SaveChanges();
+        return true;
     }
     public void Delete(int id)
     {

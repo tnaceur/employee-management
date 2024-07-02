@@ -35,7 +35,8 @@ public class EmployeeController : ControllerBase
     [HttpPost]
     public IActionResult Add(Employee employee)
     {
-        _service.Add(employee);
+        if (_service.Add(employee) is false)
+            return Conflict();
         return CreatedAtAction(nameof(Get), new { id = employee.Id }, employee);
     }
 
