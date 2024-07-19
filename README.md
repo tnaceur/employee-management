@@ -20,7 +20,6 @@ This project is an Employee Management System built using .NET 8 for the backend
 - Frontend:
   - Angular 18.0.6
   - TypeScript 5.4.5
-  - RxJS 7.8.1
 
 ## Installation
 To run the project locally, follow these steps:
